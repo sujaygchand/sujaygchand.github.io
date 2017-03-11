@@ -766,7 +766,7 @@ textarea{
   position:relative;
   width:100%;
   height:90px;
-  background:#23282d;
+  background:#24282a;
 
 }
 
@@ -784,7 +784,7 @@ textarea{
 }
 
 
-.footer .margin .menu-footer a{
+.footer .menu-footer a{
   line-height:90px;
   padding-right:25px;
   color:#5f666e;
