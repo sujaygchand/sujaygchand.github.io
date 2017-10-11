@@ -538,7 +538,7 @@ h1 span{
   height:225px;
   float: left;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .grid img{
