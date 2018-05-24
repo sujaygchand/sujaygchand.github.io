@@ -36,6 +36,7 @@ h1{
   color:white;
   font-weight:bold;
   text-transform:uppercase;
+  text-transform:uppercase;
   line-height:1.2;
 }
 
@@ -47,18 +48,18 @@ p{
 
 
 h1 span{
-  color:#2fa68e;
+  color:rgba(94, 177, 255,0.75);
 }
 
 
 ::selection {
   background: #fff;
-  color:#2fa68e;
+  color:rgba(94, 177, 255,0.75);
 }
 
 ::-moz-selection {
   background: #fff;
-  color:#2fa68e;
+  color:rgba(94, 177, 255,0.75);
 }
 
 
@@ -394,7 +395,7 @@ h1 span{
 }
 
 .about-us .column-one .circle-one:hover{
-  background: url(../img/icons/Gear.png) #2fa68e no-repeat center center;
+  background: url(../img/icons/Gear.png) rgba(94, 177, 255,0.75) no-repeat center center;
 
 }
 
@@ -425,7 +426,7 @@ h1 span{
 }
 
 .about-us .column-two .circle-two:hover{
-  background: url(../img/icons/Controller-icon.png) #2fa68e no-repeat center center;
+  background: url(../img/icons/Controller-icon.png) rgba(94, 177, 255,0.75) no-repeat center center;
 }
 
 
@@ -456,7 +457,7 @@ h1 span{
 }
 
 .about-us .column-three .circle-three:hover{ 
-  background: url(../img/icons/responsive.png) #2fa68e no-repeat center center;
+  background: url(../img/icons/responsive.png) rgba(94, 177, 255,0.75) no-repeat center center;
 }
 
 
@@ -552,7 +553,7 @@ h1 span{
   position: absolute;
   width: 300px;
   height: 225px;
-  background: #2fa68e;
+  background: rgba(94, 177, 255,0.75);
   z-index: 2;
   opacity:0;
 }
