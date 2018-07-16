@@ -1921,9 +1921,14 @@ p.aut {
 }
 
 .admin-text-right .centered-video {
-    position: relative;
+/**    position: relative;
     width: auto;
-    height: auto;
+    height: auto; */
+    	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
 }
 
 .video-container iframe, .video-container object, .video-container embed {
