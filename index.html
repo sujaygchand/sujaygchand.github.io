@@ -1,464 +1,838 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Sujay Chand - Digital Portfolio</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Perspective Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
 
-    <meta name="description" content="A Games, Mixed Reality and Software Programmer, that enjoys playing with tools to discover what " "accidents" " I can turn into projects." />
-    <meta name="keywords" content="responsive, html5, onepage, themes, template, clean layout, free web" />
-    <meta name="author" content="Thomsoon.com" />
-
-    <link rel="shortcut icon" href="img/favicon.png">
-
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/style-responsive.css" />
-
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //for-mobile-apps -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- js -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- //js -->
+    <!--FlexSlider-->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <script defer src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!--End-slider-script-->
+    <!-- pop-up-script -->
+    <script src="js/jquery.chocolat.js"></script>
+    <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+    <!--light-box-files -->
+    <script type="text/javascript" charset="utf-8">
+        $(function () {
+            $('.img-top a').Chocolat();
+        });
+    </script>
+    <!-- //pop-up-script -->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-
-    <div class="container">
-
-
-        <!-- section start-page -->
-
-        <section class="start-page parallax-background" id="home">
-
-            <div class="opacity"></div>
-            <div class="content">
-                <div class="text">
-
-                    <!-- <div class="logo"><img src="img/logos/Portfolio%20Cover%20Pic.jpg" width="255" height="255"> </div> -->
-
-                    <h1>
-              Sujay Chand
-          </h1>
-                    <p>Games, Mixed Reality and App Developer</p>
-
-                    <a href="https://youtu.be/a3z8gVdHf2Q" target="_blank">
-                        <div class="read-more">Showreel</div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/thesujaychand/" target="_blank">
-                        <div class="read-more">CV</div>
-                    </a>
-
-
-                </div>
-                <div class="arrow-down"></div>
-            </div>
-
-        </section>
-
-        <!-- section menu mobile -->
-
-        <section class="menu-media">
-
-            <div class="menu-content">
-
-                <div class="logo">Sujay Chand</div>
-
-                <div class="icon">
-                    <a href="#"><img src="img/icons/menu-media.png" /></a>
+    <!-- header -->
+    <div class="header-nav">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="logo">
+                        <a class="navbar-brand" href="index.html"><img src="images/Name_logo.png" alt=" " /></a>
+                    </div>
                 </div>
 
-            </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="act"><a href="index.html">Home</a></li>
+                        <li class="hvr-bubble-bottom"><a href="about.html">About Me</a></li>
+                        <li class="hvr-bubble-bottom"><a href="#portfolio" class="scroll">Portfolio</a></li>
+                        <li class="hvr-bubble-bottom"><a href="#skills" class="scroll">Skills</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
 
-        </section>
-
-        <ul class="menu-click">
-            <a href="#home">
-                <li href="#home">HOME</li>
-            </a>
-            <a href="#about-us">
-                <li href="#about-us">ABOUT ME</li>
-            </a>
-            <a href="#portfolio">
-                <li href="#portfolio">PROJECTS</li>
-            </a>
-            <a href="#contact">
-                <li href="#contact">CONTACT</li>
-            </a>
-        </ul>
-
-
-        <!-- section menu -->
-
-        <section class="menu">
-
-            <div class="menu-content">
-
-                <div class="logo">Sujay Chand</div>
-
-                <ul id="menu">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about-us">ABOUT ME
-            </a></li>
-                    <li><a href="#portfolio">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </div>
-
-
-        </section>
-
-
-        <!-- section about us -->
-
-        <section class="about-us" id="about-us">
-
-            <h1>ABOUT ME</h1>
-            <hr/>
-
-            <p class="title">
-                A <strong>Games</strong>, <strong>Mixed Reality</strong> and <strong>App Developer</strong>, that enjoys playing with tools and making projects. Which I did throughout my Bachelor's of Creative Technologies (2015-2017). </p>
-
-
-            <p>When I'm not developing, my life is filled with hours of Muay Thai, dabbling in the technical arts, video editing, playing video games and refining my culinary skills.</p>
-
-
-
-            <div class="column-one">
-
-                <div class="circle-one"></div>
-
-                <h2>Programming</h2>
-                <p>Blueprinting, C#, C++, React.js, Processing, Java, Arduino & HTML5</p>
-
-            </div>
-
-            <div class="column-two">
-
-                <div class="circle-two"></div>
-
-                <h2>Game Development</h2>
-                <p>Unreal Engine 4 and Unity 3D</p>
-
-            </div>
-
-
-            <div class="column-three">
-
-                <div class="circle-three"></div>
-
-                <h2>Other Skills</h2>
-                <p>Project Management, VR/AR/MR, Game Design, Hardware, Sound Editing and Video Editing</p>
-
-            </div>
-
-
-        </section>
-
-        <div class="clear"></div>
-
-        <!-- portoflio-->
-
-        <section class="portfolio" id="portfolio">
-
-
-            <div class="portfolio-margin">
-
-                <!-- portoflio-->
-
-                <!-- <section class="CurrentPortfolio" id="CurrentPortfolio">
-
-
-            <div class="portfolio-margin">
--->
-                <h1>CURRENT PROJECTS</h1>
-                <hr/>
-
-                <!-- 1 item portoflio-->
-
-                <ul class="grid">
-
-                    <li>
-                        <a href="DTB/DrunkenTarvenBrawler.html">
-                            <img src="DTB/DTB_Cover.jpg" width="601" height="255" alt="Portfolio item" />
-                            <div class="text">
-                                <p>GAME</p>
-                                <p class="description">Unreal Engine 4</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <!-- 2 item portoflio-->
-
-                    <li>
-                        <a href="DRIV_AR/DRIV_AR.html">
-                            <img src="DRIV_AR/DRIV_AR%20Cover.jpg" width="601" height="255" alt="Portfolio item" />
-                            <div class="text">
-                                <p>MIXED REALITY (PAID)</p>
-                                <p class="description">Unity 3D, C# and Microsoft Hololens</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <!-- 3 item portoflio-->
-
-                    <li>
-                        <a href="TechArt/TechArt.html">
-                            <img src="TechArt/TechArt_Logo.jpg" width="601" height="255" alt="Portfolio item" />
-                            <div class="text">
-                                <p>WEEKLY TECHINCAL ART SERIES</p>
-                                <p class="description">A showcase my technical art</p>
-                            </div>
-                        </a>
-                    </li>
-
-
-
-                    <hr/>
-                    <h1>PAST PROJECTS</h1>
-                    <hr/>
-
-                    <!-- 1 item portoflio-->
-
-                    <ul class="grid">
-
+            </nav>
+        </div>
+    </div>
+    <!-- header -->
+    <!-- header-bottom -->
+    <div class="header-bottom">
+        <div class="container">
+            <div class="header-bottom-right">
+                <div class="header-bottom-right2">
+                    <ul>
                         <li>
-                            <a href="SuperWarlocks/SuperWarlocks.html">
-                                <img src="SuperWarlocks/SuperWarlocksUI_Pic.png" width="601" height="255" alt="Portfolio item" />
-                                <div class="text">
-                                    <p>GAME</p>
-                                    <p class="description">Unreal Engine 4</p>
-                                </div>
-                            </a>
+                            <a href="https://www.linkedin.com/pub/sujay-chand/100/337/199" target="_blank" class="linkedIn"> </a>
                         </li>
-
-                        <!-- 2 item portoflio-->
                         <li>
-                            <a href="Brandwashed/Brandwashed.html">
-                                <img src="Brandwashed/Wallpaper%20version.jpg" width="601" height="255" alt="Portfolio item" />
-                                <div class="text">
-                                    <p>GAME</p>
-                                    <p class="description">Unreal Engine 4</p>
-                                </div>
-                            </a>
+                            <a href="https://www.youtube.com/channel/UCmTvgvHLIP_yhuN0xDLqK3w" target="_blank" class="youtube"> </a>
                         </li>
-
-                        <!-- 3 item portoflio-->
                         <li>
-                            <a href="InSafehands/InSafeHands.html">
-                                <img src="InSafehands/DG%20cover.jpg" width="601" height="255" alt="Portfolio item" />
-                                <div class="text">
-                                    <p>MIXED REALITY (PAID)</p>
-                                    <p class="description">Unity 3D and C#</p>
-                                </div>
-                            </a>
+                            <a href="https://github.com/sujaygchand" target="_blank" class="github"> </a>
                         </li>
-
-                        <!-- 4 item portoflio-->
                         <li>
-                            <a href="ReactWeatherApp/ReactWeatherApp.html">
-                                <img src="ReactWeatherApp/WeatherAppSS.png" width="601" height="255" alt="Portfolio item" />
-                                <div class="text">
-                                    <p>WEB APP</p>
-                                    <p class="description">React.js</p>
-                                </div>
-                            </a>
+                            <a href="https://www.instagram.com/thesujaychand/" target="_blank" class="instagram"> </a>
                         </li>
-
-                        <!-- 5 item portoflio-->
-
                         <li>
-                            <a href="Spectrum/Spectrum.html">
-                                <img src="Spectrum/SpectrumCover.png" width="601" height="255" alt="Portfolio item" />
-                                <div class="text">
-                                    <p>GAME</p>
-                                    <p class="description">Unity 3D and C#</p>
-                                </div>
-                            </a>
+                            <a href="https://twitter.com/TheSujayChand" target="_blank" class="twitter"> </a>
                         </li>
-
-                        <!-- 6 item portoflio-->
-                        <li>
-                            <a href="UE4WebSwinging/UE4WebSwing.html">
-                                <img src="UE4WebSwinging/UE4WebSwinging.jpg" width="601" height="255" alt="Portfolio item" />
-                                <div class="text">
-                                    <p>TUTORIAL: SPIDERMAN WEB SWINGING</p>
-                                    <p class="description">Unreal Engine 4 (Blueprints)</p>
-                                </div>
-                            </a>
-                        </li>
-
-
-
-                        <!-- 7 item portoflio-->
-
-                        <li>
-                            <a href="ReLive/ReLive.html">
-                                <img src="ReLive/ReLive_Cover.jpg" width="601" height="255" alt="Portfolio item" />
-                                <div class="text">
-                                    <p>VIRTUAL REALITY</p>
-                                    <p class="description">Unreal Engine 4 and Occulus Rift</p>
-                                </div>
-                            </a>
-                        </li>
-
-                        <!-- 8 item portoflio-->
-
-                        <li>
-                            <a href="TheFifthSuit/TheFifthSuit.html">
-                                <img src="TheFifthSuit/theFifthSuitCover.jpg" width="601" height="255" alt="Portfolio item" />
-                                <div class="text">
-                                    <p>TECHNICAL DEMO</p>
-                                    <p class="description">Unreal Engine 4</p>
-                                </div>
-                            </a>
-                        </li>
-
-
-
-                        <!-- 9 item portoflio-->
-                        <li>
-                            <a href="SpaceApp2016/SpaceLife16.html">
-                                <img src="SpaceApp2016/SpaceLifeCover.jpg" width="601" height="255" alt="Portfolio item" />
-                                <div class="text">
-                                    <p>GAME CONCEPT</p>
-                                    <p class="description">Unreal Engine 4 ()</p>
-                                </div>
-                            </a>
-                        </li>
-
-
-                        <!-- 8 item portoflio 
-
-                        <li>
-                            <a href="#">
-                                <img src="img/portfolio/8.png" alt="Portfolio item" />
-                                <div class="text">
-                                    <p>PORTFOLIO 8</p>
-                                    <p class="description">Under Construction...</p>
-                                </div>
-                            </a>
-                        </li>
-
-                        <!-- 9 item portoflio                   
-
-                        <li>
-                            <a href="#">
-                                <img src="img/portfolio/9.png" alt="Portfolio item" />
-                                <div class="text">
-                                    <p>PORTFOLIO 9</p>
-                                    <p class="description">Under construction......</p>
-                                </div>
-                            </a>
-                        </li>
-
+                    </ul>
+                </div>
+                <div class="header-bottom-right1">
+                    <ul>
+                        <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:sujaygchand@gmail.com">sujaygchand@gmail.com</a></li>
 
                     </ul>
-
-                    <a href="#">
-                        <div class="read-more">Load more</div>
-                    </a>
--->
-
+                </div>
+                <div class="clearfix"> </div>
             </div>
+        </div>
+    </div>
+    <!-- //header-bottom -->
+    <!-- banner -->
+    <div class="banner">
+        <div class="container">
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="banner-info">
+                                <h1>Game Developer</h1>
 
-        </section>
-        <div class="clear"></div>
-
-        <!-- Contact-->
-
-        <div class="clear"></div>
-        </section>
-
-        <div class="clear"></div>
-
-        <section class="contact" id="contact">
-            <h1>Contact</h1>
-            <hr/>
-
-            <div class="content">
-
-                <!-- <div class="form">
-
-                    <form action="#" method="post" enctype="text/plain">
-
-                        <input name="your-name" id="your-name" value="YOUR NAME" />
-                        <input name="your-email" id="your-email" value="YOUR E-MAIL" />
-
-                        <textarea id="message" name="message">MESSAGE</textarea>
-
-                        <a href="#">
-                            <div class="button">
-                                <span>SEND</span>
                             </div>
+                        </li>
+                        <li>
+                            <div class="banner-info">
+                                <h1>Mixed Reality Developer</h1>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner-info">
+                                <h1>App Developer</h1>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- //banner -->
+    <!-- services -->
+    <div class="services">
+        <div class="container">
+            <h3>Quick Start</h3>
+
+            <div class="services-grids">
+                <div class="col-md-6 services-grid-left">
+                    <div class="col-xs-4 services-grid-left1">
+                        <a href="https://www.linkedin.com/in/thesujaychand/" target="_blank">
+                            <i class="hovicon effect-2 sub-a"><span class="glyphicon glyphicon-file" aria-hidden="true"></span></i>
                         </a>
-
-                    </form>
-
+                    </div>
+                    <div class="col-xs-8 services-grid-left2">
+                        <h4>Resume</h4>
+                        <p></p>
+                    </div>
+                    <div class="clearfix"> </div>
                 </div>
--->
+                <div class="col-md-6 services-grid-right">
+                    <div class="col-xs-4 services-grid-left1">
+                        <a href="https://youtu.be/a3z8gVdHf2Q" target="_blank">
+                            <i class="hovicon effect-2 sub-a"><span class="glyphicon glyphicon-film" aria-hidden="true"></span></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-8 services-grid-left2">
+                        <h4>Showreel</h4>
+                    </div>
 
-                <div class="contact-text">
-
-                    Have a question or interested in a collaboration? Get in touch!
-                    <br/> e-mail: <strong>sujaygchand@gmail.com</strong>
-                    <br/>
-
+                    <div class="clearfix"> </div>
                 </div>
-
+                <div class="clearfix"> </div>
             </div>
+        </div>
+    </div>
+    <!-- //services -->
+    <!-- portfolio -->
+    <div id="portfolio" class="portfolio">
+        <div class="container">
+            <h3>Portfolio</h3>
+            <p class="vel">Hi, I'm Sujay, a Games, Mixed Reality & App Developer that enjoys playing with Unreal Engine 4, Unity 3D and React.js. Here is a collection of projects that I am proud of.
+            </p>
 
-        </section>
+            <div class="sap_tabs">
+                <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                    <ul class="resp-tabs-list">
+                        <li class="resp-tab-item"><span>All</span></li>
+                        <li class="resp-tab-item"><span>Unreal </span></li>
+                        <li class="resp-tab-item"><span>Unity</span></li>
+                        <li class="resp-tab-item"><span>React</span></li>
+                        <li class="resp-tab-item"><span>Games</span></li>
+                        <li class="resp-tab-item"><span>AR/VR</span></li>
+                        <li class="resp-tab-item"><span>Other</span></li>
+                    </ul>
+                    <div class="clearfix"> </div>
+                    <div class="resp-tabs-container">
+                        <div class="tab-1 resp-tab-content">
+                            <div class="main">
+                                <div class="view effect">
+                                    <a href="DTB/DrunkenTavernBrawler.html">
+                                        <div class="img-top">
+                                            <img src="DTB/DTB_Cover.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">VIDEO GAME</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="view effect">
+                                    <a href="DRIV_AR/DRIV-AR.html">
+                                        <div class="img-top">
+                                            <img src="DRIV_AR/DRIV_AR%20Cover.jpg" width="360 " height="250" />
+                                            <div class="mask">
+                                            </div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">AUGMENTED REALITY (PAID)</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="TechArt/TechArt.html">
+                                        <div class="img-top">
+                                            <img src="TechArt/TechArt_Logo.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">TECHNICAL ART</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="view effect">
+                                    <a href="SuperWarlocks/SuperWarlocks.html">
+                                        <div class="img-top">
+                                            <img src="SuperWarlocks/SuperWarlocksUI_Pic.png" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">VIDEO GAME</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="Brandwashed/Brandwashed.html">
+                                        <div class="img-top">
+                                            <img src="Brandwashed/Brandwashed-Gameplay.png" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">VIDEO GAME</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="InSafehands/InSafeHands.html">
+                                        <div class="img-top">
+                                            <img src="InSafehands/DG%20cover.jpg" width="360 " height="250" />
+                                            <div class="mask" class="hover"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">AUGMENTED REALITY (PAID)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="view effect">
+                                    <a href="ReactWeatherApp/ReactWeatherApp.html">
+                                        <div class="img-top">
+                                            <img src="ReactWeatherApp/WeatherAppSS.png" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">WEATHER APP</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="Spectrum/Spectrum.html">
+                                        <div class="img-top">
+                                            <img src="Spectrum/SpectrumCover.png" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image"> VIDEO GAME</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="ReLive/ReLive.html">
+                                        <div class="img-top">
+                                            <img src="ReLive/ReLive_Cover.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">VIRTUAL REALITY</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="UE4-Tutorials/UE4-Tutorials.html">
+                                        <div class="img-top">
+                                            <img src="UE4-Tutorials/UE4WebSwinging.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">UE4 TUTORIAL</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="SpaceApp2016/SpaceLife16.html">
+                                        <div class="img-top">
+                                            <img src="SpaceApp2016/SpaceLifeCover.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">GAME CONCEPT</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="TheFifthSuit/TheFifthSuit.html">
+                                        <div class="img-top">
+                                            <img src="TheFifthSuit/theFifthSuitCover.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">GAME CONCEPT</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Unreal -->
+
+                        <div class="tab-1 resp-tab-content">
+                            <div class="main">
+                                <div class="view effect">
+                                    <a href="DTB/DrunkenTavernBrawler.html">
+                                        <div class="img-top">
+                                            <img src="DTB/DTB_Cover.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">VIDEO GAME</span>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="view effect">
+                                    <a href="TechArt/TechArt.html">
+                                        <div class="img-top">
+                                            <img src="TechArt/TechArt_Logo.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">TECHNICAL ART</span>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="view effect">
+                                    <a href="SuperWarlocks/SuperWarlocks.html">
+                                        <div class="img-top">
+                                            <img src="SuperWarlocks/SuperWarlocksUI_Pic.png" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">VIDEO GAME</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="Brandwashed/Brandwashed.html">
+                                        <div class="img-top">
+                                            <img src="Brandwashed/Brandwashed-Gameplay.png" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">VIDEO GAME</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="view effect">
+                                    <a href="ReLive/ReLive.html">
+                                        <div class="img-top">
+                                            <img src="ReLive/ReLive_Cover.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">VIRTUAL REALITY</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="UE4-Tutorials/UE4-Tutorials.html">
+                                        <div class="img-top">
+                                            <img src="UE4-Tutorials/UE4WebSwinging.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">UE4 TUTORIAL</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="view effect">
+                                    <a href="SpaceApp2016/SpaceLife16.html">
+                                        <div class="img-top">
+                                            <img src="SpaceApp2016/SpaceLifeCover.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">GAME CONCEPT</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="TheFifthSuit/TheFifthSuit.html">
+                                        <div class="img-top">
+                                            <img src="TheFifthSuit/theFifthSuitCover.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">GAME CONCEPT</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Unity -->
+                        <div class="tab-1 resp-tab-content">
+                            <div class="main">
+                                <div class="view effect">
+                                    <a href="DRIV_AR/DRIV-AR.html">
+                                        <div class="img-top">
+                                            <img src="DRIV_AR/DRIV_AR%20Cover.jpg" width="360 " height="250" />
+                                            <div class="mask">
+                                            </div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">AUGMENTED REALITY (PAID)</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="InSafehands/InSafeHands.html">
+                                        <div class="img-top">
+                                            <img src="InSafehands/DG%20cover.jpg" width="360 " height="250" />
+                                            <div class="mask" class="hover"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">AUGMENTED REALITY (PAID)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="Spectrum/Spectrum.html">
+                                        <div class="img-top">
+                                            <img src="Spectrum/SpectrumCover.png" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image"> VIDEO GAME</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
 
 
-        <section class="footer">
+                            </div>
+                        </div>
 
-            <div class="menu-footer">
+                        <!-- React -->
+                        <div class="tab-1 resp-tab-content">
+                            <div class="main">
+                                <div class="view effect">
+                                    <a href="ReactWeatherApp/ReactWeatherApp.html">
+                                        <div class="img-top">
+                                            <img src="ReactWeatherApp/WeatherAppSS.png" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">WEATHER APP</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
 
-                <center> <a href="https://www.linkedin.com/pub/sujay-chand/100/337/199" target="_blank">LinkedIn</a>
-                    <a href="https://www.youtube.com/channel/UCmTvgvHLIP_yhuN0xDLqK3w" target="_blank">YouTube</a>
-                    <a href="https://www.instagram.com/thesujaychand/" target="_blank"> Instagram</a>
-                    <a href="https://github.com/sujaygchand" target="_blank">GitHub</a>
-                    <a href="https://twitter.com/TheSujayChand" target="_blank">Twitter</a>
-                    <a href="http://isthisprogress.tumblr.com/" target="_blank">Tumblr</a> </center>
+                            </div>
+                        </div>
+
+                        <!-- Games -->
+
+                        <div class="tab-1 resp-tab-content">
+                            <div class="main">
+                                <div class="view effect">
+                                    <a href="DTB/DrunkenTavernBrawler.html">
+                                        <div class="img-top">
+                                            <img src="DTB/DTB_Cover.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">VIDEO GAME</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="SuperWarlocks/SuperWarlocks.html">
+                                        <div class="img-top">
+                                            <img src="SuperWarlocks/SuperWarlocksUI_Pic.png" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">VIDEO GAME</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="Brandwashed/Brandwashed.html">
+                                        <div class="img-top">
+                                            <img src="Brandwashed/Brandwashed-Gameplay.png" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">VIDEO GAME</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="Spectrum/Spectrum.html">
+                                        <div class="img-top">
+                                            <img src="Spectrum/SpectrumCover.png" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image"> VIDEO GAME</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- AR/VR -->
+
+                        <div class="tab-1 resp-tab-content">
+                            <div class="main">
+                                <div class="view effect">
+                                    <a href="DRIV_AR/DRIV-AR.html">
+                                        <div class="img-top">
+                                            <img src="DRIV_AR/DRIV_AR%20Cover.jpg" width="360 " height="250" />
+                                            <div class="mask">
+                                            </div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">AUGMENTED REALITY (PAID)</span>
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="InSafehands/InSafeHands.html">
+                                        <div class="img-top">
+                                            <img src="InSafehands/DG%20cover.jpg" width="360 " height="250" />
+                                            <div class="mask" class="hover"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">AUGMENTED REALITY (PAID)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="ReLive/ReLive.html">
+                                        <div class="img-top">
+                                            <img src="ReLive/ReLive_Cover.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">VIRTUAL REALITY</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Other -->
+
+                        <div class="tab-1 resp-tab-content">
+                            <div class="main">
+                                <div class="view effect">
+                                    <a href="TechArt/TechArt.html">
+                                        <div class="img-top">
+                                            <img src="TechArt/TechArt_Logo.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">TECHNICAL ART</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                                                <div class="view effect">
+                                    <a href="ReactWeatherApp/ReactWeatherApp.html">
+                                        <div class="img-top">
+                                            <img src="ReactWeatherApp/WeatherAppSS.png" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">WEATHER APP</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                                                <div class="view effect">
+                                    <a href="UE4-Tutorials/UE4-Tutorials.html">
+                                        <div class="img-top">
+                                            <img src="UE4-Tutorials/UE4WebSwinging.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">UE4 TUTORIAL</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="SpaceApp2016/SpaceLife16.html">
+                                        <div class="img-top">
+                                            <img src="SpaceApp2016/SpaceLifeCover.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">GAME CONCEPT</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="view effect">
+                                    <a href="TheFifthSuit/TheFifthSuit.html">
+                                        <div class="img-top">
+                                            <img src="TheFifthSuit/theFifthSuitCover.jpg" width="360 " height="250" />
+                                            <div class="mask"></div>
+                                            <div class="content">
+                                                <span class="info" title="Full Image">GAME CONCEPT</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
 
 
-            </div>
-
-            <div class="copyright">© 2014. All Rights Reserved Thomsoon.com</div>
-
-
-        </section>
-
-
-        <!-- Scripts -->
-
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <!-- jQuery -->
-        <script src="js/jquery.parallax.js"></script>
-        <!-- jQuery Parallax -->
-        <script src="js/jquery.nicescroll.js"></script>
-        <!-- jQuery NiceScroll -->
-        <script src="js/jquery.sticky.js"></script>
-        <!-- jQuery Stick Menu -->
-        <script src="js/script.js"></script>
-        <!-- All script -->
-
-        <script>
-            $(function () {
-
-                var $container = $('.grid');
-
-                $container.imagesLoaded(function () {
-                    $container.masonry({
-                        itemSelector: 'li'
+                    </div>
+                </div>
+                <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('#horizontalTab').easyResponsiveTabs({
+                            type: 'default', //Types: default, vertical, accordion           
+                            width: 'auto', //auto or any width like 600px
+                            fit: true // 100% fit in a container
+                        });
                     });
+                </script>
+            </div>
+        </div>
+        <!-- //portfolio -->
+        <!-- features -->
+        <div id="skills" class="features">
+            <div class="container">
+                <h3>Skills</h3>
+                <p class="vel"></p>
+                <div class="services-grids">
+                    <div class="col-md-6 services-grid-left">
+                        <div class="col-xs-4 services-grid-left1">
+                            <i class="staticHovicon effect-2 sub-a feat"><span class="glyphicon customicon-code" aria-hidden="true"></span></i>
+                        </div>
+                        <div class="col-xs-8 services-grid-left2">
+                            <h4>Programming</h4>
+                            <p>C#, Blueprint, C++, Java & Processing</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-6 services-grid-right">
+                        <div class="col-xs-4 services-grid-left1">
+                            <i class="staticHovicon effect-2 sub-a feat"><span class="glyphicon customicon-gamecontroller" aria-hidden="true"></span></i>
+                        </div>
+                        <div class="col-xs-8 services-grid-left2">
+                            <h4>Game Engines</h4>
+                            <p>Unreal Engine 4 & Unity 3D</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="services-grids">
+                    <div class="col-md-6 services-grid-left">
+                        <div class="col-xs-4 services-grid-left1">
+                            <i class="staticHovicon effect-2 sub-a feat"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></i>
+                        </div>
+                        <div class="col-xs-8 services-grid-left2">
+                            <h4>Design</h4>
+                            <p>Game, VR & AR</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-6 services-grid-right">
+                        <div class="col-xs-4 services-grid-left1">
+                            <i class="staticHovicon effect-2 sub-a feat"><span class="glyphicon customicon-webdev" aria-hidden="true"></span></i>
+                        </div>
+                        <div class="col-xs-8 services-grid-left2">
+                            <h4>Web Development</h4>
+                            <p>React.js, HTML5 & CSS3</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <div class="services-grids">
+                    <div class="col-md-6 services-grid-left">
+                        <div class="col-xs-4 services-grid-left1">
+                            <i class="staticHovicon effect-2 sub-a feat"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span></i>
+                        </div>
+                        <div class="col-xs-8 services-grid-left2">
+                            <h4>Media Editing</h4>
+                            <p>Audition, Premiere Pro & Photoshop</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-6 services-grid-right">
+                        <div class="col-xs-4 services-grid-left1">
+                            <i class="staticHovicon effect-2 sub-a feat"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span></i>
+                        </div>
+                        <div class="col-xs-8 services-grid-left2">
+                            <h4>Hardware</h4>
+                            <p>Arduino & Fritzing</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //features -->
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-left">
+                    <p></p>
+                </div>
+                <div class="header-bottom-right2 footer-right">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/pub/sujay-chand/100/337/199" target="_blank" class="linkedIn"> </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCmTvgvHLIP_yhuN0xDLqK3w" target="_blank" class="youtube"> </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/sujaygchand" target="_blank" class="github"> </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/thesujaychand/" target="_blank" class="instagram"> </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/TheSujayChand" target="_blank" class="twitter"> </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!-- //footer -->
+        <!-- here stars scrolling icon -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                /*
+                	var defaults = {
+                	containerID: 'toTop', // fading element id
+                	containerHoverID: 'toTopHover', // fading element hover id
+                	scrollSpeed: 1200,
+                	easingType: 'linear' 
+                	};
+                */
+
+                $().UItoTop({
+                    easingType: 'easeOutQuart'
                 });
 
             });
         </script>
-        <script src="js/jquery.parallax.js"></script>
-        <!-- jQuery Parallax -->
-        <script src="js/script.js"></script>
-        <!-- All script -->
-
+        <!-- //here ends scrolling icon -->
+        <!-- for bootstrap working -->
+        <script src="js/bootstrap.js"></script>
+        <!-- //for bootstrap working -->
 </body>
 
 </html>
