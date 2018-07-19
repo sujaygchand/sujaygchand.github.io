@@ -450,6 +450,19 @@ p.vel {
     color: #fff;
 }
 
+.staticHovicon:before {
+    speak: none;
+    font-size: 48px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+
+
 .staticHovicon:after {
     pointer-events: none;
     position: absolute;
