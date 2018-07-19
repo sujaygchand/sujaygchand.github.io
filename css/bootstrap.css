@@ -265,7 +265,7 @@ th {
 
     src('../fonts/');
   src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg'); 
 }
 .glyphicon {
   position: relative;
@@ -281,6 +281,7 @@ th {
 }
 
 
+
 .customicon-code:before {
   content: url(../fonts/bold-code-02-86.png);
 }
@@ -292,8 +293,8 @@ th {
 .customicon-gamecontroller:before {
   content: url(../fonts/PS2Controller-Icon-86.png);
 }
-.
-glyphicon-asterisk:before {
+
+.glyphicon-asterisk:before {
   content: "\2a";
 }
 .glyphicon-plus:before {
