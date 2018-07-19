@@ -3,6 +3,7 @@ Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
+Color Wheel: 
 --*/
 
 html,
@@ -42,7 +43,7 @@ body a:hover {
 /*-- header --*/
 
 .header-nav {
-    background: #804e20;
+    background: #1E4566;
 }
 
 .navbar-default {
@@ -64,7 +65,7 @@ body a:hover {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
-    background-color: #804E20;
+    background-color: #1E4566;
 }
 
 .navbar-nav > li > a {
@@ -74,7 +75,7 @@ body a:hover {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #FADFC5;
+    color: #FAFAFA;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -130,7 +131,7 @@ ul.nav li.act a:before {
     left: calc(50% - 10px);
     bottom: 0;
     border-width: 15px 12px 7px 13px;
-    border-color: #804e20 transparent transparent transparent;
+    border-color: #1E4566 transparent transparent transparent;
 }
 
 .hvr-bubble-bottom:hover:before,
@@ -147,7 +148,7 @@ ul.nav li.act a:before {
 /*-- header-bottom --*/
 
 .header-bottom {
-    background: #c6976b;
+    background: #1666A8;
     padding: 1.5em 0;
 }
 
@@ -176,7 +177,7 @@ ul.nav li.act a:before {
 }
 
 .header-bottom-right1 ul li a:hover {
-    color: #ffcc33;
+    color: #313336;
 }
 
 .header-bottom-right2 {
@@ -354,7 +355,7 @@ ul.nav li.act a:before {
 }
 
 .services {
-    background: #3aa079;
+    background: #1666A8;
 }
 
 .services h3,
@@ -433,7 +434,7 @@ p.vel {
 /* Effect 2 */
  .hovicon.effect-2 {
     color: #fff;
-	box-shadow:0 0 0 3px #518D76;
+	box-shadow:0 0 0 3px #1E4566;
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;
     transition: color 0.3s;
@@ -443,7 +444,7 @@ p.vel {
     left: -2px;
     padding: 2px;
     z-index: -1;
-    background:#518d76;
+    background:#1E4566;
     -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
     -moz-transition: -moz-transform 0.2s, opacity 0.2s;
     transition: transform 0.2s, opacity 0.2s;
@@ -478,7 +479,7 @@ p.vel {
 /*-- portfolio --*/
 
 .portfolio {
-    background: #ffcc33;
+    background: #313336;
 }
 
 
@@ -505,7 +506,7 @@ p.vel {
 }
 
 .resp-tab-item {
-    color: #3AA079;
+    color: #ABCFED;
     font-size: 0.9em;
     cursor: pointer;
     padding: 6px 25px;
@@ -527,7 +528,7 @@ p.vel {
 li.resp-tab-item:hover {
     text-shadow: none;
     color: #fff;
-    background: #3AA079;
+    background: #ABCFED;
 }
 
 .resp-tabs-container {
@@ -720,15 +721,15 @@ font-size: 29px;
 /*-- features --*/
 
 .features {
-    background: #C6976B;
+    background: #1666A8;
 }
 
 i.hovicon.effect-2.feat {
-    box-shadow: 0 0 0 3px #B78251;
+    box-shadow: 0 0 0 3px #1E4566;
 }
 
 .hovicon.effect-2.feat:after {
-    background: #B78251;
+    background: #1E4566;
 }
 
 
@@ -789,7 +790,7 @@ i.hovicon.effect-2.feat {
 
 .mail-sub input[type="submit"]:hover {
     color: #fff;
-    background: #c6976b;
+    background: #1666A8;
 }
 
 .map iframe {
@@ -821,7 +822,7 @@ i.hovicon.effect-2.feat {
 }
 
 .contact-left ul li a:hover {
-    color: #ffcc33;
+    color: #313336;
 }
 
 .contact-bottom {
@@ -852,7 +853,7 @@ i.hovicon.effect-2.feat {
 .contact-bottom input[type="reset"] {
     outline: none;
     border: none;
-    background: #ffcc33;
+    background: #313336;
     font-size: 1em;
     color: #fff;
     padding: 13px 0;
@@ -885,7 +886,7 @@ i.hovicon.effect-2.feat {
 
 .footer {
     padding: 1.5em 0;
-    background: #062f3c;
+    background: #1E4566;
 }
 
 .footer-left {
@@ -951,7 +952,7 @@ i.hovicon.effect-2.feat {
 h3.title,
 .about h3,
 .history h3 {
-    color: #804e20;
+    color: #1E4566;
 }
 
 p.iste {
@@ -1358,7 +1359,7 @@ p.para {
 
 .hello a {
     padding: 10px 30px;
-    background: #C6976B;
+    background: #1666A8;
     color: #fff;
     font-size: 14px;
     text-decoration: none;
@@ -1367,12 +1368,12 @@ p.para {
     -moz-transition: .5s all;
     -o-transition: .5s all;
     -ms-transition: .5s all;
-    box-shadow: 0px 2px 0px #804E20;
+    box-shadow: 0px 2px 0px #1E4566;
 }
 
 .hello a:hover {
     text-decoration: none;
-    color: #C6976B;
+    color: #1666A8;
     background: #fff;
 }
 
@@ -1471,7 +1472,7 @@ p.para {
     font-size: 21px;
     margin: 0;
     border-radius: 160px;
-    background: #ffcc33;
+    background: #313336;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -1507,7 +1508,7 @@ p.para {
 
 .history-left-grid h4,
 .history-right h4 {
-    color: #C6976B;
+    color: #1666A8;
     letter-spacing: 1px;
     font-size: 1.3em;
     margin: 1em 0;
@@ -1555,7 +1556,7 @@ p.aut {
 
 .history-right ul li a:hover {
     text-decoration: none;
-    color: #FFCC33;
+    color: #313336;
 }
 
 .history-left h3,
@@ -1578,9 +1579,9 @@ p.aut {
 .blog-leftl {
     float: left;
     width: 18%;
-    background: #C6976B;
+    background: #1666A8;
     padding: 1em;
-    border-top: 4px solid #804E20;
+    border-top: 4px solid #1E4566;
 }
 
 .blog-leftl h4 {
@@ -1657,7 +1658,7 @@ p.aut {
 }
 
 .blog-leftr ul li a:hover {
-    color: #C6976B;
+    color: #1666A8;
     text-decoration: none;
 }
 
@@ -1677,7 +1678,7 @@ p.aut {
 .blog-right h3,
 .response h4,
 .coment-form h4 {
-    color: #C6976B;
+    color: #1666A8;
     margin: 0 0 1em;
     font-size: 1.5em;
     text-align: left;
@@ -1784,7 +1785,7 @@ p.aut {
     font-size: 14px;
     color: #fff;
     padding: 3px 9px 5px;
-    background: #C6976B;
+    background: #1666A8;
 }
 
 .footer-top-grid1 ul.tag3 li a:hover {
@@ -1902,7 +1903,7 @@ p.aut {
 
 .response-text-left h5 a {
     text-decoration: none;
-    color: #C6976B;
+    color: #1666A8;
 }
 
 .response-text-left h5 a:hover {
@@ -1930,7 +1931,7 @@ p.aut {
 
 .response-text-right ul li {
     display: inline-block;
-    color: #3aa079;
+    color: #ABCFED;
     font-size: 14px;
     margin-right: 1em;
 }
@@ -1941,7 +1942,7 @@ p.aut {
 }
 
 .response-text-right ul li a:hover {
-    color: #3aa079;
+    color: #ABCFED;
     text-decoration: none;
 }
 
@@ -1991,7 +1992,7 @@ p.aut {
 
 .coment-form input[type="submit"]:hover {
     color: #fff;
-    background: #804E20;
+    background: #1E4566;
     outline: none;
 }
 
