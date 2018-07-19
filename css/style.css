@@ -392,6 +392,7 @@ p.vel {
 
 /*-- effect --*/
 
+/*-- effect --*/
 .hovicon {
     display: inline-block;
     font-size: 45px;
@@ -403,25 +404,21 @@ p.vel {
     border-radius: 50%;
     text-align: center;
     position: relative;
-    left: 180px;
-    top: 30px;
     text-decoration: none;
     z-index: 1;
     color: #fff;
 }
-
 .hovicon:after {
     pointer-events: none;
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    content: '';
+    content:'';
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
 }
-
 .hovicon:before {
     speak: none;
     font-size: 48px;
@@ -433,118 +430,45 @@ p.vel {
     display: block;
     -webkit-font-smoothing: antialiased;
 }
-
-.staticHovicon {
-    display: inline-block;
-    font-size: 45px;
-    line-height: 90px;
-    cursor: pointer;
-    margin: 20px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    text-align: center;
-    position: relative;
-    text-decoration: none;
-    z-index: 1;
-    color: #fff;
-}
-
-.staticHovicon:before {
-    speak: none;
-    font-size: 48px;
-    line-height: 90px;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    display: block;
-    -webkit-font-smoothing: antialiased;
-}
-
-
-.staticHovicon:after {
-    pointer-events: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    content: '';
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-}
-
-
 /* Effect 2 */
-
-.hovicon.effect-2 {
+ .hovicon.effect-2 {
     color: #fff;
-    box-shadow: 0 0 0 3px #518D76;
+	box-shadow:0 0 0 3px #518D76;
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;
     transition: color 0.3s;
 }
-
 .hovicon.effect-2:after {
     top: -2px;
     left: -2px;
     padding: 2px;
     z-index: -1;
-    background: #518d76;
+    background:#518d76;
     -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
     -moz-transition: -moz-transform 0.2s, opacity 0.2s;
     transition: transform 0.2s, opacity 0.2s;
 }
-
-.staticHovicon.effect-2 {
-    color: #fff;
-    box-shadow: 0 0 0 3px #B78251;
-    -webkit-transition: color 0.3s;
-    -moz-transition: color 0.3s;
-    transition: color 0.3s;
-}
-
-.staticHovicon.effect-2:after {
-    top: -2px;
-    left: -2px;
-    padding: 2px;
-    z-index: -1;
-    background: #B78251;
-    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-    transition: transform 0.2s, opacity 0.2s;
-}
-
-
 /* Effect 2a */
-
-.hovicon.effect-2.sub-a:hover,
-.hovicon.effect-2.sub-a:hover i {
-    color: #eee;
+ .hovicon.effect-2.sub-a:hover, .hovicon.effect-2.sub-a:hover i {
+    color:#eee;
 }
-
 .hovicon.effect-2.sub-a:hover:after {
     -webkit-transform: scale(0.85);
     -moz-transform: scale(0.85);
     -ms-transform: scale(0.85);
     transform: scale(0.85);
 }
-
-
 /*-- //effect --*/
-
-.services-grid-left2 h4 {
-    font-size: 2em;
-    color: #fff;
-    margin: 0;
+.services-grid-left2 h4{
+	font-size:2em;
+	color:#fff;
+	margin:0;
 }
-
-.services-grid-left2 p {
-    margin: 1em 0 0;
-    color: #E2E2E2;
-    font-size: 14px;
-    line-height: 1.8em;
+.services-grid-left2 p{
+	margin:1em 0 0;
+	color:#E2E2E2;
+	font-size:14px;
+	line-height:1.8em;
 }
 
 
@@ -799,11 +723,11 @@ font-size: 29px;
     background: #C6976B;
 }
 
-i.staticHovicon.effect-2.feat {
+i.hovicon.effect-2.feat {
     box-shadow: 0 0 0 3px #B78251;
 }
 
-.staticHovicon.effect-2.feat:after {
+.hovicon.effect-2.feat:after {
     background: #B78251;
 }
 
