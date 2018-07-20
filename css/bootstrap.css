@@ -283,6 +283,8 @@ th {
 
 
 .customicon-code:before {
+    height: 50%;
+    width: 50%;
   content: url(../fonts/bold-code-02-86.png);
 }
 
