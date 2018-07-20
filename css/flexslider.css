@@ -86,9 +86,9 @@ html[xmlns] .slides {display: block;}
     cursor: pointer;
     text-indent: -9999px;
     border-radius: 100%;
-    border: 4px solid rgba(128, 78, 32, 0.53);
+    border: 4px solid rgba((171, 207, 237, 0.53));
 }
-.flex-control-paging li a.flex-active { background:rgba(128, 78, 32, 0.53); cursor: default; border: 2px solid #fff;}
+.flex-control-paging li a.flex-active { background:rgba((171, 207, 237, 0.53)); cursor: default; border: 2px solid #fff;}
 .flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
 .flex-control-thumbs li {width: 25%; float: left; margin: 0;}
 .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
