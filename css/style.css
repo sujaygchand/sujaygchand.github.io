@@ -1877,9 +1877,8 @@ a:visited {
 }
 
 .admin-text-right .centered-video {
-    width: 560px;
-    height: 315px; 
-    	position:absolute;
+    	
+    position:relative;
 	padding-bottom:56.25%;
 	padding-top:30px;
 	height:0;
