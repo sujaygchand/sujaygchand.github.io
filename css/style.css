@@ -186,7 +186,7 @@ ul.nav li.act a:before {
 
 .header-bottom-right2 {
     float: right;
-    padding-right: 2.5em;
+    padding-right: 0em;
 }
 
 .header-bottom-right2 ul li {
@@ -1712,6 +1712,16 @@ p.aut {
     text-decoration: none;
     padding-top: 5px;
     color: #8DAFF0;
+}
+
+/* unvisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: darkgreen;
 }
 
 .recent {
