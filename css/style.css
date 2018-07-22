@@ -585,7 +585,10 @@ h2.resp-accordion {
 
 .view img {
     display: block;
-    position: relative;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
 }
 
 .view span.info {
