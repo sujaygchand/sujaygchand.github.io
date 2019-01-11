@@ -1724,12 +1724,12 @@ p.aut {
 
 /* unvisited link */
 a:link {
-    color: green;
+    color: darkorange;
 }
 
 /* visited link */
 a:visited {
-    color: darkgreen;
+    color: darkorange;
 }
 
 .recent {
