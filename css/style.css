@@ -304,23 +304,23 @@ ul.nav li.act a:before {
 /*-- banner --*/
 
 .banner {
-    background: url(../images/SujayPortfolioBanner.jpg) no-repeat 0px 0px;
+    background: url(../images/SujayPortfolioBanner2019.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 1000px;
+}
+
+.banner1 {
+    background: url(../images/SujayPortfolioBanner2019.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
     min-height: 800px;
-}
-
-.banner1 {
-    background: url(../images/SujayPortfolioBanner.jpg) no-repeat 0px 0px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    min-height: 300px;
 }
 
 .banner-info {
@@ -627,7 +627,7 @@ font-size: 29px;
   color: #FFF;
 }
 
-.view span. description {
+.view span.description {
   font-size: 15px;
   width:300px;
   margin-top:20px;
