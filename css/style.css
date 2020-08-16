@@ -304,18 +304,20 @@ ul.nav li.act a:before {
 /*-- banner --*/
 
 .banner {
-    background: url(../images/SujayPortfolioBanner2019.jpg) no-repeat 0px 0px;
-    background-size: cover;
+    background: url(../images/Wanaka2020.jpg) no-repeat;
+    background-size:  cover;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height: 1000px;
+    min-height: 1000px; 
 }
 
 .banner1 {
-    background: url(../images/SujayPortfolioBanner2019.jpg) no-repeat 0px 0px;
-    background-size: cover;
+    background: url(../images/Wanaka2020.jpg) no-repeat;
+    background-size:  cover;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
