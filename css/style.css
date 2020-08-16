@@ -321,7 +321,7 @@ ul.nav li.act a:before {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -ms-background-size: cover;
+    -ms-background-size: cover; 
     min-height: 800px;
 }
 
